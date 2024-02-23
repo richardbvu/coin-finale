@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Coin from "../Coin";
+import Coin from "./Coin";
 
 function Market() {
   const [coins, setCoins] = useState([]);
@@ -24,45 +24,50 @@ function Market() {
   const filteredCoins = coins.filter((coin) => {
     return coin.name.toLowerCase().includes(search.toLowerCase());
   });
-
   return (
-    <div className='market'>
-      <div className='market__search'>
-        <h1 className='market__title'>Search a currency</h1>
-        <form action=''>
-          <input
-            type='text'
-            placeholder='Search'
-            className='market__input'
-            onChange={handleChange}
-          />
-        </form>
-      </div>
-      <div className='coin-title__container'>
-        <div className='coin-title__row'>
-          <div className='coin-title__currency'>
-            <h1>Coin</h1>
-          </div>
-          <div className='coin-title__data'>
-            <p className='coin-title__price'>Price</p>
-            <p>24 Hour Change</p>
-            <p className='coin-title__marketcap'>Market Cap</p>
-          </div>
+    <div className='market' id='market'>
+      <div className='market__container'>
+        <div className='market__search'>
+          <label for='market__input' className='market__search-title'>
+            Search name
+          </label>
+          <form action=''>
+            <input
+              id='market__input'
+              name='market__input'
+              type='text'
+              placeholder='Search'
+              className='market__input'
+              onChange={handleChange}
+            />
+          </form>
         </div>
+        <div className='market-heading__container'>
+          <div className='market-heading__row'>
+            <p className='market-heading__coin'>Coin</p>
+            <p className='market-heading__name'>Name</p>
+            <p className='market-heading__abbrev'>Abbrev.</p>
+            <p className='market-heading__price'>Price</p>
+            <p className='market-heading__24hour'>24 Hour</p>
+            <p className='market-heading__marketcap'>Market Cap</p>
+          </div>
+          {/* <div className='coin-title__currency'></div>
+          <div className='coin-title__data'></div> */}
+        </div>
+        {filteredCoins.map((coin) => {
+          return (
+            <Coin
+              key={coin.id}
+              name={coin.name}
+              image={coin.image}
+              symbol={coin.symbol}
+              price={coin.current_price}
+              priceChange={coin.market_cap_change_percentage_24h}
+              marketcap={coin.market_cap}
+            />
+          );
+        })}
       </div>
-      {filteredCoins.map((coin) => {
-        return (
-          <Coin
-            key={coin.id}
-            name={coin.name}
-            image={coin.image}
-            symbol={coin.symbol}
-            price={coin.current_price}
-            priceChange={coin.market_cap_change_percentage_24h}
-            marketcap={coin.market_cap}
-          />
-        );
-      })}
     </div>
   );
 }
