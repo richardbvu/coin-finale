@@ -29,7 +29,7 @@ function Market() {
       <div className='market__container'>
         <div className='market__search'>
           <label for='market__input' className='market__search-title'>
-            Search name
+            Search Currency
           </label>
           <form action=''>
             <input
