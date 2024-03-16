@@ -9,7 +9,7 @@ function Market() {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en"
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false&locale=en"
       )
       .then((res) => {
         setCoins(res.data);
@@ -44,15 +44,13 @@ function Market() {
         </div>
         <div className='market-heading__container'>
           <div className='market-heading__row'>
-            <p className='market-heading__coin'>Coin</p>
+            <p className='market-heading__coin'></p>
             <p className='market-heading__name'>Name</p>
-            <p className='market-heading__abbrev'>Abbrev.</p>
             <p className='market-heading__price'>Price</p>
+            <p className='market-heading__abbrev'>Abbrev.</p>
             <p className='market-heading__24hour'>24 Hour</p>
             <p className='market-heading__marketcap'>Market Cap</p>
           </div>
-          {/* <div className='coin-title__currency'></div>
-          <div className='coin-title__data'></div> */}
         </div>
         {filteredCoins.map((coin) => {
           return (
