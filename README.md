@@ -8,7 +8,7 @@ Live Demo : Here
 
 <h3 align="center">Home Page</h3>
 
-![Screenshot of Home Page](https://github.com/richardbvu/coin/blob/main/src/images/screenshot-gym.png)
+![Screenshot of Home Page](https://github.com/richardbvu/coin-finale/blob/main/src/images/screenshot-coin.png)
 
 
 # How It's Made
