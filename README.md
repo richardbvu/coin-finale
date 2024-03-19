@@ -1,6 +1,6 @@
 # About the project
 
-A website that uses an API for cryptocurrency searching, an online platform that allows users to find and retrieve information about various cryptocurrencies quickly. Accesses real-time data such as prices, market cap, and historical performance of different cryptocurrencies. 
+A website that uses an API for cryptocurrency searching, an online platform that allows users to find and access real-time data such as prices, market cap, and historical performance of different cryptocurrencies. 
 
 
 Live Demo : [Live Demo](https://coin-finale.vercel.app/)
