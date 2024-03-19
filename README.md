@@ -18,7 +18,7 @@ Built with :
 * CSS
 * API
 
-
+This project was intentionally developed using an API to demonstrate my proficiency in handling APIs.
 
 # Lessons Learned
 I've learned countless lessons that I'm proud of. Here's some lessons that I'd like to share: 
