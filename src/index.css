@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --white: #f3f2f4;
   --bg-bluepurple: linear-gradient(0deg, #0f051d 10%, #130749 90%);
