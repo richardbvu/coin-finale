@@ -2,12 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 :root {
@@ -17,6 +12,13 @@ body {
   --bg-light: #130749;
   --bg-dark: #0f051d;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* NAV */
 
 .nav {
   width: 100%;
