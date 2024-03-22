@@ -19,6 +19,7 @@ function Market() {
 
   const handleChange = (e) => {
     setSearch(e.target.value);
+    // e.preventDefault();
   };
 
   const filteredCoins = coins.filter((coin) => {
@@ -31,7 +32,12 @@ function Market() {
           <label for='market__input' className='market__search-title'>
             Search Currency
           </label>
-          <form action=''>
+          <form
+            action=''
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
             <input
               id='market__input'
               name='market__input'
