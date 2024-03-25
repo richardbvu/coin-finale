@@ -14,7 +14,7 @@ const Join = () => {
             Join our <span>Discord</span>
           </h1>
           <p>This is your crypto destination. Coin Finale.</p>
-          <a href='/' className='join__button'>
+          <a href='#navbar' className='join__button'>
             Join Discord
           </a>
         </div>

@@ -11,16 +11,16 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer__container'>
         <div className='footer__icons'>
-          <a href='/'>
+          <a href='#navbar'>
             <FontAwesomeIcon icon={faXTwitter} />
           </a>
-          <a href='/'>
+          <a href='#navbar'>
             <FontAwesomeIcon icon={faDiscord} />
           </a>
-          <a href='/'>
+          <a href='#navbar'>
             <FontAwesomeIcon icon={faYoutube} />
           </a>
-          <a href='/'>
+          <a href='#navbar'>
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>

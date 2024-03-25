@@ -13,14 +13,14 @@ const Navbar = () => {
     navRefLinks.current.classList.toggle("active");
   };
   return (
-    <nav className='nav'>
+    <nav className='nav' id='navbar'>
       <div className='nav__container'>
-        <a href='/' className='nav__logo'>
+        <a href='#navbar' className='nav__logo'>
           Coin Finale
         </a>
         <ul className='nav__links' ref={navRefLinks}>
           <li className='nav__link'>
-            <a href='/'>Home</a>
+            <a href='#navbar'>Home</a>
           </li>
           <li className='nav__link' onClick={noShowNavBar}>
             <a href='#market'>Market</a>

@@ -860,6 +860,20 @@ body {
   font-size: 1.5rem;
 }
 
+/* .join__text p:last-of-type {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  background: var(--text-bluepurple);
+  border-radius: 2rem;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 1.5rem;
+} */
+
+/* .join__text p:last-of-type:hover {
+  cursor: pointer;
+} */
+
 /* JOIN RESPONSIVE */
 
 /* 2xl */
