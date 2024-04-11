@@ -634,6 +634,39 @@ body {
   }
   .coin__row {
     width: 100%;
+    min-width: 872px;
+    margin-left: 440px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .coin__container {
+    width: 100%;
+  }
+  .coin__row {
+    width: 100%;
+    min-width: 882px;
+    margin-left: 470px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .coin__container {
+    width: 100%;
+  }
+  .coin__row {
+    width: 100%;
+    min-width: 872px;
+    margin-left: 490px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .coin__container {
+    width: 100%;
+  }
+  .coin__row {
+    width: 100%;
     min-width: 882px;
     margin-left: 515px;
   }
