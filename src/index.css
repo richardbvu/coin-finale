@@ -632,12 +632,22 @@ body {
   .coin__container {
     width: 100%;
   }
+  .coin__row {
+    width: 100%;
+    min-width: 882px;
+    margin-left: 515px;
+  }
 }
 
 /* 2xs */
 @media screen and (max-width: 360px) {
   .coin__container {
     width: 100%;
+  }
+  .coin__row {
+    width: 100%;
+    min-width: 872px;
+    margin-left: 555px;
   }
 }
 

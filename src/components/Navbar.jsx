@@ -19,9 +19,9 @@ const Navbar = () => {
           Coin Finale
         </a>
         <ul className='nav__links' ref={navRefLinks}>
-          <li className='nav__link'>
+          {/* <li className='nav__link'>
             <a href='#navbar'>Home</a>
-          </li>
+          </li> */}
           <li className='nav__link' onClick={noShowNavBar}>
             <a href='#market'>Market</a>
           </li>
